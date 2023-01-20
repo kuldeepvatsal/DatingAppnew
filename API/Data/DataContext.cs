@@ -10,9 +10,9 @@ namespace API.Data
         }
         public DbSet<AppUser> AppUsers { get; set; }
         //change the name of table
-        protected override void OnModelCreating(ModelBuilder  builder)
-        {
-          builder.Entity<AppUser>().ToTable("AppUser");
-        }
+        // protected override void OnModelCreating(ModelBuilder  builder)
+        // {
+        //   builder.Entity<AppUser>().ToTable("AppUser");
+        // }
     }
 }
