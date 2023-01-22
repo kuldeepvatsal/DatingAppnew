@@ -14,6 +14,9 @@ import { RegisterComponent } from './register/register.component';
 import { MemberListComponent } from './members/member-list/member-list.component';
 import { MemberDetailComponent } from './members/member-detail/member-detail.component';
 import { ListsComponent } from './lists/lists.component';
+import { MessagesComponent } from './messages/messages.component';
+import { ToastrModule } from 'ngx-toastr';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +25,8 @@ import { ListsComponent } from './lists/lists.component';
     RegisterComponent,
     MemberListComponent,
     MemberDetailComponent,
-    ListsComponent
+    ListsComponent,
+    MessagesComponent
   ],
   imports: [
     BrowserModule,
@@ -30,7 +34,10 @@ import { ListsComponent } from './lists/lists.component';
     HttpClientModule,
     BrowserAnimationsModule,
     FormsModule,
-    BsDropdownModule.forRoot()
+    BsDropdownModule.forRoot(),
+    ToastrModule.forRoot()
+
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
